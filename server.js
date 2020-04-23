@@ -62,6 +62,4 @@ app.get('/ping', (req,res) => {
 app.listen(port, () =>  { 
       console.log("Serveur Rdy") // INFORMATION 
       console.log(`Access via : http://${ip}:${port}/`) // INFORMATION
-    }
-  )
 })
