@@ -34,7 +34,7 @@ app.get('/log', (req,res) => {
 })
 
 //  READ & WRITE LOG 
-app.get('/ping', (req,res) => {
+app.get('/', (req,res) => {
   const date = new Date()
   
   // IP PROVENANCE
