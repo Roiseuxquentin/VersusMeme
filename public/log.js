@@ -30,7 +30,7 @@ const params = (method,data) => {
 
 const load = () => { 
 
-	return 	fetch(`${ip}:${port}/`,params("GET"))
+	return 	fetch(`http://${ip}:${port}/`,params("GET"))
 		    .then(res => res.json())
 		    // .then(res => 	console.log('%c DebuGg : ', 'background: orange; color: red' , res ))
 		    .then(log => log.localData.map(visite => 	`<ul class="list">
