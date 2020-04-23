@@ -30,7 +30,12 @@ app.use(cors()) // 4 SAFE SOFT WIN -_-
 
 // LOG REDIRECTION
 app.get('/log', (req,res) => {
-  res.redirect(req.baseUrl + '/log.html')
+  res.redirect(req.baseUrl + '/back/log.html')
+})
+
+// LOG REDIRECTION
+app.get('/', (req,res) => {
+  res.redirect(req.baseUrl + '/index.html')
 })
 
 //  READ & WRITE LOG 
@@ -56,7 +61,7 @@ app.get('/', (req,res) => {
 
           res.send(JSON.stringify(newJsonData)) // RENVOIE LE JSON
         })
-    }) 
+    })
 })
 
 app.listen(port, () =>  { 
